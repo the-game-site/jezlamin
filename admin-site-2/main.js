@@ -1,4 +1,5 @@
 let secSec = "ced777be274337ea";
+let loginStatus = false
 
 document.addEventListener("DOMContentLoaded", function() {
     init();
@@ -18,6 +19,7 @@ function init(){
 
 function loginWithHashCode(code){
     if (code == secSec) {
+        loginStatus = true
         let elStatus = document.getElementById("logon-status");
         let elContent = document.getElementById("content-main");
 
@@ -26,12 +28,29 @@ function loginWithHashCode(code){
 
         elContent.style.display = "block";
 
-        console.log("System unblocked!");
+        console.log("%cSystem unblocked!", "font-size:18px; color: green; margin-top:-10px;");
+        console.log("%cmore possible hacks detected: ", "font-size:12px; color: green; margin-top:-10px;")
+        console.log("%cgetSecurityProfile()", "font-size:12px; color: green; margin-top:-10px;")
     } else {
         console.log("%cIntrusion detector triggered. Your attempt got logged. Security informed.", "font-size:14px; color: red");
     }
     
     return "system ready.";
+}
+
+function getSecurityProfile() {
+    if (loginStatus) {
+        console.log("%chacking DB...", "font-size:12px; color: red; margin-top:-10px;")
+        console.log("%cDoctor Scholz was a brilliant scientist working here in the company", "font-size:12px; color: green; margin-top:-10px;")
+        console.log("%cHe was working on developing a ground breaking 3d printing technology", "font-size:12px; color: green; margin-top:-10px;")
+        console.log("%cHe destroyed company sponsored research and went missing", "font-size:12px; color: green; margin-top:-10px;")
+        console.log("%cWe suspect that he is absconding and hiding someplace", "font-size:12px; color: green; margin-top:-10px;")
+        console.log("%cCompany security is searching for him", "font-size:12px; color: green; margin-top:-10px;")
+    } else {
+        console.log("%cAccess Denied!!. Your attempt got logged. Security informed.", "font-size:14px; color: red");
+        return "Access Denied"
+    }  
+    return "Hack Complete" 
 }
 
 function login() {
