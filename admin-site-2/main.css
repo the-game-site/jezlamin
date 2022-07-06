@@ -1,0 +1,75 @@
+/* Master Control System */
+/* main css, 2022 by Fuman Lumango */
+
+#main {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#banner-regular {
+    color:darkgray;
+    padding:5px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+#logon-status {
+    display: none;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    font-size:16px;
+    font-weight:bold;
+    background-color: darkred;
+    color: white;
+
+    padding:5px;
+}
+
+#content-main {
+    display: none;
+
+    padding:15px;
+    border:dotted 1px lightgray;
+}
+
+#form-login {
+    font-size:10px;
+    font-weight:bold;
+
+    background-color: lightgrey;
+    border:solid 1px gray;
+    padding:15px;
+}
+
+.form-fieldname {
+    width: 65px;
+    display: block;
+    float:left;
+}
+
+.notice {
+    background-color:lightgrey;
+    border:solid 1px grey;
+    color:red;
+    padding:5px;
+    font-weight:bold;
+    font-size:10px;
+    margin-bottom: 45px;
+}
+
+/* animations */
+.blink {
+    animation: blinker 1s linear infinite;
+}
+  
+@keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+}

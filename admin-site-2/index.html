@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Master Control System Logon</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <script type="text/javascript" src="main.js"></script>
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!-- loginWithHashCode("dab64765f3d4fc29ced777be274337ea"); -->
+    <div id="main">
+        <div id="banner-regular">
+            Master Control System Logon 
+        </div>
+
+        <div id="form-login">
+            <div class="notice">Important: System logon is limited to desktop browser useage at the moment!</div>
+            <form id="form-login-form">
+                <span class="form-fieldname">Username:</span><input type="text" size="20" name="username" id="input-user-name" /><br/><br/>
+                <span class="form-fieldname">Password:</span><input type="text" size="20" name="userpassword" id="input-user-password" /><br/>
+                <br/>
+                <button type="button" id="form-button-login">Login</button>
+            </form>
+
+            <div id="logon-status" class="blink">
+                Not logged in.
+            </div>
+        </div>
+        
+        <div id="content-main">
+            User data pad<br/>
+            <br/>
+            <span class="form-fieldname">Name:</span><input type="text" value="Max Headroom"><br/>
+            <span class="form-fieldname">Secret:</span><input type="text" value="6600"><br/>
+            <span class="form-fieldname">Room:</span><input type="text" value="1.20"><br/>
+        </div>
+    </div>
+
+
+</body>
+</html>
