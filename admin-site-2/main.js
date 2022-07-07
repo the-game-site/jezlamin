@@ -1,4 +1,4 @@
-let secSec = "dab64765f3d4fc29";
+let secSec = "ced777be274337ea";
 let loginStatus = false
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -71,5 +71,5 @@ function login() {
 }
 
 function warmUpCache(){
-    secSec += "ced777be274337ea";
+    secSec += "dab64765f3d4fc29"; 
 }
