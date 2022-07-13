@@ -72,6 +72,4 @@ function login() {
 
 function warmUpCache(){
     secSec += "dab64765274337ea"; 
-    // 274337ea
-    // f3d4fc29
 }
